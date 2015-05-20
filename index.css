@@ -1,0 +1,27 @@
+.section-title {
+  font-family: 'BrandonGrotesque';
+  font-size: 32px;
+  color: #F16839;
+}
+
+.container {
+  width: 66%;
+  height: 750px;
+}
+.heading {
+  font-family: 'BrandonGrotesque';
+  font-size: 80px;
+  color: #FFF;
+  vertical-align: middle;
+  padding-top: 5%;
+  text-shadow: 0 0 8pt rgba(0, 0, 0, .7);
+}
+
+.subheading {
+  font-size: 50px;
+  padding-top: 5%;
+}
+
+.font-crap {
+  font-style: italic;
+}

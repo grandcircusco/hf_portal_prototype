@@ -1,0 +1,25 @@
+body {
+  background-color: #EFEFEF;
+}
+
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src: url('assets/fonts/BrandonGrotesque-Black.otf');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('assets/fonts/OpenSans-Light.ttf');
+}
+
+header {
+  height: 360px;
+  width: 960px;
+  background: url('assets/images/Lobby.jpg');
+}
+
+
+p {
+  font-family: 'OpenSans';
+}
+

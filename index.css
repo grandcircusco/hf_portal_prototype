@@ -22,6 +22,29 @@
   padding-top: 5%;
 }
 
-.font-crap {
+
+/*Fellows view*/
+.fellow-snapshot {
+  width: 210px;
+  padding: 5px;
+  margin: 10px;
+  display: inline-table;
+}
+
+.fellow-info {
+  margin-top: 10%;
+}
+
+.fellow-name {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.fellow-college {
+  text-decoration: underline;
+}
+
+.fellow-languages {
   font-style: italic;
 }
+

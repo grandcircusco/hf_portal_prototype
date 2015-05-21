@@ -22,6 +22,28 @@
   padding-top: 5%;
 }
 
+nav {
+  background-color: #F16839;
+}
+
+.nav-btn {
+  display: inline-block;
+  font-size: 28px;
+  font-family: 'OpenSans';
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #FFF;
+}
+.nav-link:hover {
+  color: #FFF;
+}
+.nav-link:visited {
+  color: #FFF;
+}
+
 
 /*Fellows view*/
 .fellow-snapshot {

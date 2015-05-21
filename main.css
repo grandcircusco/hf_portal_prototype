@@ -1,5 +1,6 @@
 body {
   background-color: #EFEFEF;
+  color: #2A252D;
 }
 
 @font-face {
@@ -17,7 +18,6 @@ header {
   width: 960px;
   background: url('assets/images/Lobby.jpg');
 }
-
 
 p {
   font-family: 'OpenSans';

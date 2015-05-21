@@ -1,0 +1,31 @@
+.company-detail {
+  width: 620px;
+  margin: 15px;
+}
+
+.company-name {
+  font-family: "BrandonGrotesque";
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #f16839;
+  margin-bottom: 5px;
+}
+
+.company-location {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.company-label {
+  color: #1EA8B4;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.company-size {
+  font-size: 1.5em;
+}
+
+.company-languages {
+  font-size: 28px;
+}

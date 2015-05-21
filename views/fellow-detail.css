@@ -1,0 +1,31 @@
+.fellow-detail {
+  width: 620px;
+  margin: 15px;
+}
+
+.fellow-name {
+  font-family: "BrandonGrotesque";
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #f16839;
+  margin-bottom: 5px;
+}
+
+.fellow-hometown {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.fellow-label {
+  color: #1EA8B4;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.fellow-alma-mater {
+  font-size: 1.5em;
+}
+
+.fellow-languages {
+  font-size: 28px;
+}

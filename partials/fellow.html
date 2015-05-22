@@ -1,6 +1,6 @@
 <h3 class='section-title'>MEET THE FELLOWS</h3>
 
-<div ng-repeat='fellow in fellows' class='fellow-snapshot'>
+<div ng-repeat='fellow in fellows' class='fellow-snapshot' ng-click="open($index)">
   <img class='fellow-headshot' src='http://placehold.it/200x200' alt="Fellow-name" />
   <div class='fellow-info text-center'>
     <p class='fellow-name'>{{fellow.name}}</p>

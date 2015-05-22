@@ -1,4 +1,4 @@
-var portal = angular.module('hf-portal', ['ngRoute', 'portalControllers']);
+var portal = angular.module('hf-portal', ['ngRoute', 'portalControllers', 'ui.bootstrap']);
 
 portal.config(function($routeProvider){
   $routeProvider

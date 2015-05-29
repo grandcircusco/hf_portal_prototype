@@ -6,6 +6,10 @@ portal.config(function($routeProvider){
       templateUrl: 'partials/fellow.html',
       controller: 'FellowController'
     })
+    .when('/register', {
+      templateUrl: 'partials/register.html',
+      controller: 'RegisterController'
+    })
     .otherwise({
       redirectTo: '/'
     });

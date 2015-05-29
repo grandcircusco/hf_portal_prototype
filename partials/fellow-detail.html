@@ -1,6 +1,6 @@
 <div class="fellow-detail" >
   <div class='modal-header'>
-    <h1 class="fellow-name" class="modal-title">{{person.name}}</h1>
+    <h1 class="fellow-name" class="modal-title">{{person.first_name + " " + person.last_name}}</h1>
     <img src='http://placehold.it/600x400'>
   </div>
   <div class="fellow-info modal-body text-center">
@@ -9,7 +9,7 @@
     <p class="fellow-label">alma mater</p>
     <p class="fellow-alma-mater">{{person.university}}</p>
     <p class="fellow-label">interests</p>
-    <p class="fellow-languages">{{listLanguages(person.languages)}}</p>
+    <p class="fellow-languages">{{listLanguages(person.technologies)}}</p>
     <p class="fellow-description text-justify">{{person.greeting}}</p>
   </div>
   <div class='modal-footer'>

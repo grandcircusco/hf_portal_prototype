@@ -1,11 +1,11 @@
-<h3 class='section-title'>MEET THE FELLOWS</h3>
+<h3 class='section-title'>{{data}}</h3>
 
 <div ng-repeat='fellow in fellows' class='fellow-snapshot' ng-click="open($index)">
   <img class='fellow-headshot' src='http://placehold.it/200x200' alt="Fellow-name" />
   <div class='fellow-info text-center'>
-    <p class='fellow-name'>{{fellow.name}}</p>
+    <p class='fellow-name'>{{fellow.first_name}}</p>
     <p class='fellow-college'>{{fellow.university}}</p>
-    <p class='fellow-languages'>{{listLanguages(fellow.languages)}}</p>
+    <p class='fellow-languages'>{{listLanguages(fellow.technologies)}}</p>
     <p class='fellow-blurb text-left'>{{fellow.greeting}}</p>
   </div>
 </div>

@@ -1,0 +1,34 @@
+<h2>Register with the portal</h2>
+
+<div>
+
+  <form>
+    <div class='form-group'>
+      <p class='form-label'>I am a ...</p> <select name='select' ng-model="fellowForm"><option value='fellow' >Fellow</option><option value='company'>Company</option></select>
+    </div>
+  </form>
+
+  <form ng-show="fellowForm === 'fellow'" id='fellowForm' ng-submit="register(fellowData, fellowForm)">
+    <div >
+      <input type="text" class="form-control input-lg" placeholder="Choose a username" ng-model="fellowData.username">
+      <input type="password" class="form-control input-lg" placeholder="Choose a password" ng-model="fellowData.password">
+      <input type="password" class="form-control input-lg" placeholder="Retype your password!" ng-model="fellowData.passwordRedux">
+      <input type="text" class="form-control input-lg" placeholder="What is your first name..." ng-model="fellowData.first_name">
+      <input type="text" class="form-control input-lg" placeholder="What is your last name..." ng-model="fellowData.last_name">
+      <input type="text" class="form-control input-lg" placeholder="What is your email..." ng-model="fellowData.email">
+      <input type="text" class="form-control input-lg" placeholder="What is your hometown..." ng-model="fellowData.hometown">
+      <input type="text" class="form-control input-lg" placeholder="Where did you go to school..." ng-model="fellowData.university">
+      <input type="text" class="form-control input-lg" placeholder="What programming languages do you know?" ng-model="fellowData.technologies">
+      <textarea class="form-control input-lg" rows='10' placeholder="Introduce yourself to your possible employers!" ng-model="fellowData.greeting"></textarea>
+
+      <!-- <input type='submit' value='submit' class='btn btn-primary' /> -->
+    </div>
+  </form>
+  <button ng-click="register(fellowData, fellowForm)">Click</button>
+  <div ng-show="fellowForm === 'company'">
+    <h2>Company form not ready yet. Check back later.</h2>
+    <img src="http://www.reactiongifs.com/wp-content/uploads/2012/09/spongebob-shame.gif" alt="">
+  </div>
+
+</div>
+

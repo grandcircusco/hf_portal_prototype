@@ -104,3 +104,13 @@ nav {
   font-size: 28px;
 }
 
+
+/* Register form */
+
+.form-label {
+  display: inline-block;
+}
+
+.form-control {
+  margin: 5px 0;
+}

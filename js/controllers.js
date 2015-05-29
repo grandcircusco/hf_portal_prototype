@@ -24,7 +24,6 @@ portalControllers.controller('FellowController', function($scope, $modal, $http)
     });
 
   $scope.open = function(index) {
-    // console.log(fellow);
 
     var fellowModal = $modal.open({
       templateUrl: 'partials/fellow-detail.html',
@@ -56,6 +55,69 @@ portalControllers.controller('FellowController', function($scope, $modal, $http)
       });
       return languagesKnown;
   };
+});
 
+portalControllers.controller('RegisterController', function($scope, $http, $modal){
+
+  $scope.fellowData = {};
+
+  //Grab Data from db if logged in (maybe someday)
+
+  $scope.register = function(registrationData, formType){
+    // document.getElementById('fellowForm').reset();
+    console.table(registrationData);
+    console.log('formType: ', formType);
+
+    handleFellowRegistration(registrationData);
+    // var registrationHandler = formType === 'fellow' ? handleFellowRegistration : handleCompanyRegistration;
+
+    // registrationHandler(registrationData);
+  };
+
+  function handleFellowRegistration(registrationData) {
+
+    $http.post('http://localhost:3000/fellows', registrationData).
+      success(function(data, status) {
+        var registerSuccessModal = $modal.open({
+          templateUrl: 'partials/register-success-modal.html',
+          controller: 'RegisterController',
+          size: 'sm',
+          scope: $scope
+        });
+      }).
+      error(function(data, status) {
+        console.log(data);
+        var registerErrorModal = $modal.open({
+          templateUrl: 'partials/register-failwhale-modal.html',
+          controller: 'RegisterController',
+          size: 'sm',
+          scope: $scope
+        });
+      });
+  }
+
+  function handleCompanyRegistration() {
+    console.log('so sorry');
+  }
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
